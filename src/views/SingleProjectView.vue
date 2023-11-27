@@ -4,19 +4,33 @@ export default {
     name: 'SingleProjectView',
     data() {
         return {
-            post: {}
+            loading: true,
+            project: {},
         }
     },
     mounted() {
-        const url = `http://127.0.0.1:8000/api/posts/${this.$route.params.slug}`;
+        const url = `http://127.0.0.1:8000/api/projects/${this.$route.params.slug}`;
         axios.get(url)
-            .then(response => {
-                console.log(response.result);
-                this.post = response.result
+            .then(resp => {
+                //console.log(resp.data.result);
+                //console.log(resp.data.success);
+                if (resp.data.success) {
+                    //console.log('ok project found');
+                    // save the project if it exists
+                    this.project = resp.data.result
+                    this.loading = false;
+
+                } else {
+                    // pusha la rotta 404 
+                    this.$router.push({ name: 'NotFound' });
+                    //console.log('404 project not found');
+                }
+
             })
             .catch(err => {
                 console.log(err.message);
             })
+
     }
 }
 </script>
@@ -25,14 +39,25 @@ export default {
     <div>
 
         <div class="container">
-            <div class="cover_image">
-                <img class="img-fluid object-fit-cover" :src="'http://127.0.0.1:8000/storage/' + project.cover_image" alt=""
-                    style="height: 400px;">
+
+            <div v-if="!loading">
+                <div class="cover_image">
+                    <img class="img-fluid object-fit-cover" :src="project.cover_image" alt="" style="height: 400px;">
+                </div>
+                <h1>{{ project.title }}</h1>
+                <p>{{ project.description }}</p>
+
             </div>
-            <h1>{{ project.title }}</h1>
-            <p>{{ project.content }}</p>
+            <div v-else>
+                loading...
+            </div>
+
+
         </div>
 
     </div>
 </template>
+
+
+
 <style lang="scss" scoped></style>
