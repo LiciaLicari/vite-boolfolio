@@ -14,7 +14,7 @@ export default {
         <section class="intro">
             <div class="wrapper pt-5 d-flex flex-column align-items-center justify-content-center">
                 <h1 class=" text-danger-emphasis text-center">Fullstack Web Developer</h1>
-                <h4 class="text-center">Languages are my oxygen.</h4>
+                <h4 class="text-center">Lorem ipsum dolor sit amet.</h4>
                 <div class="pt-4">
                     <img height="200" src="../assets/img/avataaars.png" alt="">
                 </div>
