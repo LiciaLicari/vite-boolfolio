@@ -12,21 +12,14 @@ export default {
 <template>
     <footer class="text-center text-lg-start bg-danger shadow">
         <div class="container d-flex justify-content-center py-5">
-            <a href="mailto:esterdahri@gmail.com" class="text-decoration-none p-4">
+            <a href="mailto:licialicari.dev@gmail.com" class="text-decoration-none p-4">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em"
                     viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
                         d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
                 </svg>
             </a>
-            <a href="https://twitter.com/EsterDahri" class="text-decoration-none p-4">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-                </svg>
-            </a>
-            <a href="https://www.instagram.com/esti.148/" class="text-decoration-none p-4">
+            <a href="https://www.instagram.com/licial/" class="text-decoration-none p-4">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em"
                     viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
